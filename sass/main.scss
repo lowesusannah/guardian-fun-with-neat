@@ -33,9 +33,11 @@ p {
 
 .header-container {
   overflow: auto;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  // width: 90%;
+  margin-left: calc((100% - 81.25rem) / 2);
+  margin-right: calc((100% - 81.25rem) / 2);
+  // width: 90%;
+  // margin:auto;
 }
 
 .logo {
@@ -53,9 +55,10 @@ img {
 // @include fluid-img;
 
 .content-container {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  // width: 90%;
+  // margin:auto;
+  margin-left: calc((100% - 81.25rem) / 2);
+  margin-right: calc((100% - 81.25rem) / 2);
   display: grid;
   grid-column-gap:1em;
   grid-template-columns: 18% 72%;
@@ -151,7 +154,8 @@ img {
 
 @include breakpoint(mobileonly) {
  //extend all child element divs 100% width
-	  .content-container, .hero-row-big, .hero-footer, .row-top, .inner-hero {
+	  .header-container, .content-container, .hero-row-big, .hero-footer, .row-top, .inner-hero {
+      width: 100%;
       display: unset;
       margin: 0;
       padding:0;
@@ -160,9 +164,13 @@ img {
       display: none;
     }
     .logo {
-      width: 100%;
+      width: 80%;
       float: none;
       margin-left: 0;
       margin-right: 0;
+      background-color: red;
+    }
+    img {
+      width: 300px;
     }
 	}
