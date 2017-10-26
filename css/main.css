@@ -533,7 +533,7 @@ img {
   background-color: green;
   height: auto; }
 
-.article-layout__sidebar {
+.article-layout__sidebar, .article-layout__main {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
@@ -544,10 +544,7 @@ img {
 .article-layout__main {
   width: calc(58.33333% - 31.66667px);
   float: left;
-  margin-left: 20px;
-  background-color: yellow;
-  height: auto;
-  margin-bottom: 1em; }
+  margin-left: 20px; }
 
 @media (max-width: 385px) {
   .header-container, .content-container, .hero-row-big, .hero-footer, .row-top, .inner-hero {
@@ -569,4 +566,4 @@ img {
   img {
     width: 300px; } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

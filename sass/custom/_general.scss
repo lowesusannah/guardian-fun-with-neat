@@ -1,3 +1,25 @@
+// @import "../bourbon/bourbon";
+
 .hero-footer-headline {
   font-weight: bold;
 }
+
+//fonts
+h1 {
+  font-family: $helvetica;
+  font-size: 22px;
+  line-height: 24px;
+  color: #00456e;
+  weight: 900;
+  // font-size: 1.5em;
+}
+
+p {
+  font-size: 0.875rem;
+  color: $darkest-grey;
+}
+
+
+.article-layout__main {
+   background-color: tint(#6ecaa6, 40%);
+ }

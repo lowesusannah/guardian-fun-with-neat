@@ -13,25 +13,8 @@
   padding: 0;
 }
 
-// @mixin my-personal-grid {
-//   @include column-width: 800px;
-// }
-//
-// @mixin my-small-grid {
-//   @include column-width: 100px;
-// }
-
 body {
   background-color: lightgrey;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-p {
-  font-size: 0.875rem;
-  color: $almost-black;
 }
 
 .header-wrapper {
@@ -81,7 +64,6 @@ img {
   background-color: white;
   border-top: 1px solid $aqua;
   margin-top: 0.75em;
-
   // @include size(fit-content);
 }
 
@@ -97,7 +79,6 @@ img {
   // display: grid;
   // grid-template-columns: 3fr 1fr;
   // grid-auto-rows: auto;
-
 }
 
 // .test {
@@ -150,8 +131,6 @@ img {
   background-color: $light-grey;
   margin-right: 0.5em;
   border-top: 1px solid $aqua;
-
-
 }
 
 .top-right {
@@ -240,25 +219,12 @@ $test-three-layout-grid--tablet-up: (
 
 
 //TESTING HERE CAUTION
-$article-layout-grid: (
-  columns: 1,
-  gutter: 2rem,
-);
-
-$article-layout-grid--tablet-up: (
-  columns: 5,
-  gutter: 2rem,
-  media: "(min-width: 768px)",
-);
-
-
 
 .article-layout {
   @include grid-column(12);
   background-color: grey;
   height: auto;
 }
-
 
 .parent {
   @include grid-column(12);
@@ -267,14 +233,12 @@ $article-layout-grid--tablet-up: (
   display: flex;
   flex-wrap: wrap;
   background-color: white;
-
 }
 .article-layout__hero {
   @include grid-column(12);
   margin-bottom: 2rem;
   background-color: green;
   height: auto;
-  // @include gutter(grey, 2px);
 }
 
 .article-layout__sidebar {
@@ -283,16 +247,15 @@ $article-layout-grid--tablet-up: (
   background-color: blue;
   height: auto;
   margin-bottom: 1em;
-
 }
 
 .article-layout__main {
+  @extend .article-layout__sidebar;
   @include grid-column(7);
-  // margin-bottom: 2rem;
-  background-color: yellow;
-  height: auto;
-    margin-bottom: 1em;
+
 }
+
+
 
 
 //Test OVER
