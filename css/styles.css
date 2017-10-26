@@ -432,10 +432,7 @@ img {
   padding-top: 0.75em; }
 
 .row-top {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-auto-rows: auto; }
+  width: 100%; }
 
 .hero {
   background-color: white;
@@ -455,12 +452,7 @@ img {
   border-top: 1px solid #52C6DD; }
 
 .hero-row-big {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-auto-rows: auto;
-  margin-bottom: 1em;
-  grid-column-gap: 0.5em;
-  padding-left: 0.4em; }
+  width: 100%; }
 
 .hero-footer {
   display: grid;
@@ -475,6 +467,80 @@ img {
 
 .hero-footer-column {
   padding-right: 0.4em; }
+
+.test-three::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.test-three-layout__top {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 2rem; }
+
+.test-three-layout__left {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .test-three-layout__left {
+      width: calc(40% - 28px);
+      float: left;
+      margin-left: 20px; } }
+
+.test-three-layout__right {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .test-three-layout__right {
+      width: calc(60% - 32px);
+      float: left;
+      margin-left: 20px; } }
+
+.article-layout {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  background-color: grey;
+  height: auto; }
+
+.parent {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  min-height: 2px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white; }
+
+.article-layout__hero {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 2rem;
+  background-color: green;
+  height: auto; }
+
+.article-layout__sidebar {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px;
+  background-color: blue;
+  height: auto;
+  margin-bottom: 1em; }
+
+.article-layout__main {
+  width: calc(58.33333% - 31.66667px);
+  float: left;
+  margin-left: 20px;
+  background-color: yellow;
+  height: auto;
+  margin-bottom: 1em; }
 
 @media (max-width: 385px) {
   .header-container, .content-container, .hero-row-big, .hero-footer, .row-top, .inner-hero {
